@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestões Amazon</title>
+    <meta name="description" content="Somos afiliados da Amazon e oferecemos os melhores conselhos de produtos para você comprar.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000; /* Cor de fundo preto */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.2s; /* Adiciona um efeito de transição de zoom */
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .card .botao-comprar {
+            display: block;
+            background-color: #ff9900;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Zoom ao passar o mouse */
+        }
+
+        /* Estilo para a barra de cabeçalho */
+        .header-image {
+            background-image: url('amazon.jpeg');
+            height: 300px; /* Aumente a altura da barra de cabeçalho */
+            width: 100%; /* Defina a largura para cobrir toda a barra de navegação */
+            background-size: cover; /* A imagem de fundo cobrirá toda a barra */
+            background-repeat: no-repeat;
+            background-position: center; /* Centralizar a imagem na barra de navegação */
+            text-align: center;
+            color: #fff; /* Cor do texto */
+            padding: 20px;
+            position: relative; /* Adiciona posição relativa para criar gradiente */
+        }
+
+        .header-image::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)); /* Gradiente de escurecimento */
+        }
+
+        .header-image h1 {
+            font-size: 36px; /* Tamanho maior da fonte para o nome do site */
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', serif; /* Fonte estilizada */
+            position: relative; /* Adiciona posição relativa para centralização vertical */
+            top: 50%; /* Move o elemento para o centro vertical */
+            transform: translateY(-50%); /* Ajusta o centro vertical */
+        }
+
+        .header-image p {
+            font-size: 20px; /* Tamanho maior da fonte para a descrição */
+            margin: 10px 0;
+            padding: 0;
+            font-style: italic; /* Itálico para a descrição */
+        }
+
+        /* Estilo para a barra de pesquisa */
+        .search-bar {
+            background-color: #000; /* Cor de fundo da barra de pesquisa */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .search-input {
+            width: 80%; /* Aumente a largura da barra de pesquisa */
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .search-button {
+            background-color: #FFFF00;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .search-button:hover {
+            background-color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-image">
+            <!-- Nome do Site e Descrição -->
+            <h1 style="font-family: 'Pacifico', cursive;">Bem-Vindo à Sugestões Amazon</h1>
+            <p>Somos AFILIADOS da Amazon, a escolha número um em conselhos de produtos de alta qualidade, Oferecemos as melhores sugestões e produtos em destaque no mercado, Sua satisfação é nossa prioridade e sua compra está segura conosco.</p>
+        </div>
+    </header>
+    <!-- Barra de Pesquisa -->
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Pesquisar produtos...">
+        <button class="search-button">Pesquisar</button>
+    </div>
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="imagem-produto-1.jpg" alt="Produto 1">
+            <p>Descrição do Produto 1</p>
+            <a href="link-afiliado-1" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="imagem-produto-2.jpg" alt="Produto 2">
+            <p>Descrição do Produto 2</p>
+            <a href="link-afiliado-2" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="imagem-produto-3.jpg" alt="Produto 3">
+            <p>Descrição do Produto 3</p>
+            <a href="link-afiliado-3" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="imagem-produto-4.jpg" alt="Produto 4">
+            <p>Descrição do Produto 4</p>
+            <a href="link-afiliado-4" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="imagem-produto-5.jpg" alt="Produto 5">
+            <p>Descrição do Produto 5</p>
+            <a href="link-afiliado-5" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <img src="imagem-produto-6.jpg" alt="Produto 6">
+            <p>Descrição do Produto 6</p>
+            <a href="link-afiliado-6" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+            <img src="imagem-produto-7.jpg" alt="Produto 7">
+            <p>Descrição do Produto 7</p>
+            <a href="link-afiliado-7" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+            <img src="imagem-produto-8.jpg" alt="Produto 8">
+            <p>Descrição do Produto 8</p>
+            <a href="link-afiliado-8" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card">
+            <img src="imagem-produto-9.jpg" alt="Produto 9">
+            <p>Descrição do Produto 9</p>
+            <a href="link-afiliado-9" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card">
+            <img src="imagem-produto-10.jpg" alt="Produto 10">
+            <p>Descrição do Produto 10</p>
+            <a href="link-afiliado-10" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card">
+            <img src="imagem-produto-11.jpg" alt="Produto 11">
+            <p>Descrição do Produto 11</p>
+            <a href="link-afiliado-11" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="card">
+            <img src="imagem-produto-12.jpg" alt="Produto 12">
+            <p>Descrição do Produto 12</p>
+            <a href="link-afiliado-12" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="card">
+            <img src="imagem-produto-13.jpg" alt="Produto 13">
+            <p>Descrição do Produto 13</p>
+            <a href="link-afiliado-13" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="card">
+            <img src="imagem-produto-14.jpg" alt="Produto 14">
+            <p>Descrição do Produto 14</p>
+            <a href="link-afiliado-14" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="card">
+            <img src="imagem-produto-15.jpg" alt="Produto 15">
+            <p>Descrição do Produto 15</p>
+            <a href="link-afiliado-15" target="_blank" rel="noopener noreferrer" class="botao-comprar">Compre na Amazon</a>
+        </div>
+    </div>
+</body>
+</html>
