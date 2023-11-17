@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000; /* Cor de fundo preto */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s; /* Adiciona um efeito de transição de zoom */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.card .botao-comprar {
+    display: block;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Zoom ao passar o mouse */
+}
+
+/* Estilo para a barra de cabeçalho */
+
+.header-image {
+    background-image: url('amazon.jpeg');
+    height: 300px; /* Aumente a altura da barra de cabeçalho */
+    width: 100%; /* Defina a largura para cobrir toda a barra de navegação */
+    background-size: cover; /* A imagem de fundo cobrirá toda a barra */
+    background-repeat: no-repeat;
+    background-position: center; /* Centralizar a imagem na barra de navegação */
+    text-align: center;
+    color: #fff; /* Cor do texto */
+    padding: 20px;
+}
+
+.header-image h1 {
+    font-size: 24px; /* Tamanho da fonte para o nome do site */
+    margin: 0;
+    padding: 0;
+}
+
+.header-image p {
+    font-size: 16px; /* Tamanho da fonte para a descrição */
+    margin: 10px 0;
+    padding: 0;
+}
+
+/* Estilo para a barra de pesquisa */
+.search-bar {
+    background-color: #000; /* Cor de fundo da barra de pesquisa */
+    padding: 20px;
+    text-align: center;
+}
+
+.search-input {
+    width: 80%; /* Aumente a largura da barra de pesquisa */
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-button {
+    background-color: #FFFF00;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #FFD700;
+}
